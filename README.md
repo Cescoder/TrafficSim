@@ -1,18 +1,39 @@
-## Getting Started
+# 🚗 Terminal Traffic Simulation
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A simple multithreaded traffic simulation in Java that models the behavior of multiple cars on a one-dimensional road and displays their positions in a terminal-based visualization.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 🛠 Features
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- 🚘 **Vehicle simulation** with position, velocity, acceleration, and realistic spacing.
+- 🧠 **Dynamic acceleration model** that adapts to the car ahead (Intelligent Driver Model-inspired).
+- 🖥 **Terminal-based visualization** with:
+  - Dynamic centering on a selected vehicle
+  - Adaptive zoom based on road coverage
+  - Visual markers every 100m and km
+- 🧵 **Multithreaded architecture**: simulation and rendering run concurrently for smooth updates.
+- ⏱ Adjustable **time speed** for real-time or faster-than-real-time simulation.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 📦 Structure
 
-## Dependency Management
+- `Car.java`: Defines the vehicle dynamics.
+- `Universe.java`: Simulation engine; updates vehicle states over time.
+- `TerminalView.java`: Renders the road and vehicles in the terminal.
+- `Main.java`: Entry point; sets up and runs simulation/view in parallel threads.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+### ✅ Prerequisites
+
+- Java 11+ installed
+- Terminal that supports monospaced characters
+
+---
+
+### 👥 Authors
+
+- [Cescoder](https://github.com/Cescoder)
+- [gass-ita](https://github.com/gass-ita)
